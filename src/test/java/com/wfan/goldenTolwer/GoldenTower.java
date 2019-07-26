@@ -134,7 +134,7 @@ public class GoldenTower {
     public void binarySearchTest() {
         List arrayList = getIntegerList(100);
         Collections.sort(arrayList, new PublicComparer());
-//        Collections.reverse(arrayList);
+//        MyCollections.reverse(arrayList);
         System.out.println(arrayList);
         int index = Collections.binarySearch(arrayList, 2);
         System.out.println(index);
@@ -155,7 +155,7 @@ public class GoldenTower {
         System.out.println(add);
         System.out.println(arrayList);
 //        System.out.println(subList instanceof AbstractList);
-//        arrayList = Collections.unmodifiableList(arrayList);
+//        arrayList = MyCollections.unmodifiableList(arrayList);
 //        System.out.println(subList);
 
         Employee go = new Employee("go", 11);

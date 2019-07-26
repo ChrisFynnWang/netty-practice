@@ -31,7 +31,7 @@ public class Main {
 //    System.out.println(CoffeeSilistze.TALL.getPrice());
 //    String name = CoffeeSize.TALL.name();
 //    System.out.println(name);
-//    List<FlavourSize> flavourSizes = Arrays.asList(FlavourSize.values());
+//    List<FlavourSize> flavourSizes = MyCollections.asList(FlavourSize.values());
 //    boolean contains = flavourSizes.contains(CoffeeSize.TALL);
 //    System.out.println(contains);
 //    System.out.println(FlavourSize.TALL.hashCode());
