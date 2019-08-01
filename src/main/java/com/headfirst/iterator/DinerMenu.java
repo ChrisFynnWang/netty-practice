@@ -1,11 +1,13 @@
 package com.headfirst.iterator;
 
+import java.util.Iterator;
+
 /**
  * @Author : Chris Wang
  * @Description :
  * @Date : 2019/7/26 9:15
  */
-public class DinerMenu {
+public class DinerMenu implements Menu {
 
     static final int MAX_ITEMS = 6;
 

@@ -1,5 +1,7 @@
 package com.headfirst.iterator;
 
+import java.util.Iterator;
+
 /**
  * @Author : Chris Wang
  * @Description :
@@ -7,18 +9,23 @@ package com.headfirst.iterator;
  */
 public class Waitress {
 
-    PancakeHouseMenu pancakeHouseMenu;
+    Menu pancakeHouseMenu;
 
-    DinerMenu dinerMenu;
+    Menu dinerMenu;
 
-    public Waitress(PancakeHouseMenu pancakeHouseMenu, DinerMenu dinerMenu) {
+    Menu cafeMenu;
+
+    public Waitress(Menu pancakeHouseMenu, Menu dinerMenu, Menu cafeMenu) {
         this.pancakeHouseMenu = pancakeHouseMenu;
         this.dinerMenu = dinerMenu;
+        this.cafeMenu = cafeMenu;
     }
 
     public void printMenu() {
         Iterator pancakeHouseMenuIterator = pancakeHouseMenu.createIterator();
         Iterator dinerMenuIterator = dinerMenu.createIterator();
+        Iterator cafeMenuIterator = cafeMenu.createIterator();
+        dinerMenuIterator.remove();
         System.out.println();
         printMenu();
 

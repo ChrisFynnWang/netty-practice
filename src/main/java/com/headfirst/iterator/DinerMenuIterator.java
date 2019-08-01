@@ -1,5 +1,7 @@
 package com.headfirst.iterator;
 
+import java.util.Iterator;
+
 /**
  * @Author : Chris Wang
  * @Description :
