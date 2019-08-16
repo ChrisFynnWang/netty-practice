@@ -1,7 +1,6 @@
 package com.algorithmDiagram;
 
 import com.alibaba.druid.support.json.JSONUtils;
-import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.RandomUtils;
 import org.junit.Test;
 
@@ -10,17 +9,16 @@ import java.util.List;
 
 /**
  * @Author : Chris Wang
- * @Description :
+ * @Description : 二分查找法
  * @Date : 2019/7/31 19:23
  */
 public class BinarySearch {
 
-
     @Test
     public void test() {
         List<Integer> numList = new ArrayList<>();
-        for (int i = 0; i < 100; i++) {
-            int j = RandomUtils.nextInt(0, 99);
+        for (int i = 0; i < 1000; i++) {
+            int j = RandomUtils.nextInt(0, 999);
             if (!numList.contains(j)) {
                 numList.add(j);
             }
@@ -31,6 +29,7 @@ public class BinarySearch {
     }
 
     public int search(List<Integer> list, int num, int start, int end) {
+        System.out.println(1);
         int position = (end + start) / 2;
         if ((end - start) / 2 == 0) {
             return -1;
